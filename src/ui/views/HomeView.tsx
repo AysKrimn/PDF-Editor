@@ -22,8 +22,8 @@ export function HomeView({ onCreateNew }: HomeViewProps) {
               <FilePlus className="w-6 h-6 text-blue-600" />
             </div>
             <div className="text-left">
-              <p className="font-semibold text-slate-800">Sifirdan Olustur</p>
-              <p className="text-sm text-slate-500">Bos bir sayfa ile baslayin</p>
+              <p className="font-semibold text-slate-800">Sıfırdan Oluştur</p>
+              <p className="text-sm text-slate-500">Boş bir sayfa ile başlayın</p>
             </div>
           </button>
 
@@ -35,8 +35,8 @@ export function HomeView({ onCreateNew }: HomeViewProps) {
               <FileText className="w-6 h-6 text-slate-400" />
             </div>
             <div className="text-left">
-              <p className="font-semibold text-slate-400">PDF Duzenle</p>
-              <p className="text-sm text-slate-400">Yakinda...</p>
+              <p className="font-semibold text-slate-400">PDF Düzenle</p>
+              <p className="text-sm text-slate-400">Yakında...</p>
             </div>
           </button>
         </div>

@@ -24,6 +24,10 @@ export function Palette({ canvasContainerRef }: PaletteProps) {
     editor.addTextObject(center.x, center.y);
   }, [editor, getViewportCenter]);
 
+  const handleAddList = useCallback(() => {
+    const center = getViewportCenter();
+    editor.addListObject(center.x, center.y);
+  }, [editor, getViewportCenter]);
 
   const handleAddImage = useCallback(() => {
     fileInputRef.current?.click();
@@ -68,7 +72,7 @@ export function Palette({ canvasContainerRef }: PaletteProps) {
       />
 
       <PaletteItem
-        onClick={handleAddText}
+        onClick={handleAddList}
         icon={<Icon name="listIcon" className="w-5 h-5 text-blue-600" />}
         title="Liste"
         description="Liste ekle"

@@ -31,6 +31,18 @@ export function createTextObject(
   };
 }
 
+export function createListObject(
+  x: number,
+  y: number,
+  zIndex: number,
+): TextObjectData {
+  // super createtext object
+  const textObject = createTextObject(x, y, zIndex);
+  textObject.text = `1. Item\n2. Item\n3. Item`.split("\n").join("\n");
+
+  return textObject;
+}
+
 export function isTextObject(obj: EditorObject): obj is TextObjectData {
   return obj.type === "text";
 }

@@ -10,7 +10,7 @@ import { CommandManager } from "./commands/CommandManager";
 import { AddObjectCommand } from "./commands/AddObject";
 import { RemoveObjectCommand } from "./commands/RemoveObject";
 import { UpdateObjectCommand } from "./commands/UpdateObject";
-import { createTextObject } from "./objects/TextObject";
+import { createListObject, createTextObject } from "./objects/TextObject";
 import { createImageObject } from "./objects/ImageObject";
 
 export class Editor {
@@ -45,6 +45,12 @@ export class Editor {
       viewportCenterY - 20,
       zIndex,
     );
+    this.addObject(obj);
+  }
+
+  addListObject(viewportCenterX: number, viewportCenterY: number): void {
+    const zIndex = this.canvasManager.getNextZIndex(this._state.objects);
+    const obj = createListObject(viewportCenterX, viewportCenterY, zIndex);
     this.addObject(obj);
   }
 

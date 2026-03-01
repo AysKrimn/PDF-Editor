@@ -10,7 +10,7 @@ export function HomeView({ onCreateNew }: HomeViewProps) {
       <div className="max-w-md w-full space-y-6">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-slate-800">PDF Editor</h1>
-          <p className="text-slate-500">PDF olusturun veya duzenleyin</p>
+          <p className="text-slate-500">PDF oluşturun veya düzenleyin</p>
         </div>
 
         <div className="space-y-3 flex gap-3 mt-1">
